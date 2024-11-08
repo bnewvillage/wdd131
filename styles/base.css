@@ -32,6 +32,14 @@ header h1{
     font-size: 1.5rem;
 }
 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
 
 nav ul{
     margin:0;
@@ -46,19 +54,21 @@ nav ul{
 nav li{
     display:flex;
     color:black;
-    list-style: none;
     padding:0 0.5rem 0 0.5rem;
     min-width: 6rem;
     justify-content: center;
 
 }
 
-nav li:hover{
+li:hover{
     background-color: #979696;
 }
 
+a:hover{
+    color:white;
+}
+
 nav a{
-    text-decoration: none;
     font-weight: 400;
 }
 
@@ -140,3 +150,9 @@ main{
     margin-top:10px;
 }
 
+#resources ul{
+    width:100%;
+    padding:0;
+    display:block;
+    text-align: center;
+}
