@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta author="Blaine Villanueva">
+    <meta description="WDD 131 - Dynamic Web Fundamentals Blaine Villanueva Project Home Page">
+    <link href="styles/base.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>WDD 131 - Dynamic Web Fundamentals - Blaine</title>
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Blaine</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Blaine Villanueva</h1>
+
+        <nav>
+            <ul>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/." target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-tim/4?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+                <li><a>Final Project</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profileCard" class="card">
+            <h2>About Me</h2>
+            
+            <section id="aboutMeSection">
+                <img id="profileImage"src="images/profile-photo.webp" alt="Handome Man">
+            <p>My name is Blaine Joshua and I'm from the Philippines. I am currently residing in Dubai and working as a sales consultant in the motorcycles industry. You'll often find me exploring new places, feeling the wind on my face or losing myself in a good book.</p>
+            
+            </section>
+            <div></div>
+            <h3>Surigao del Sur, Philippines</h3>
+            <section id="moreAboutMe">
+                <img src="images/philippines-flag.webp" alt="Flag of the Philippines">
+                <p>Philippines, an archipelagic country in Southeast Asia consisting of more than 7,000 islands and islets. It is a tropical paradise brimming with natural beauty. From its majestic mountains, active volcanoes, pristine beaches, and lush forests, its diverse set of landscape offers a breathtaking scenery that captivates tourists and locals alike.</p>
+            </section>
+
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=K74l26pE4YA" target="_blank">One Minute Flexbox</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codeacademy CSS</a></li>
+                <li><a href="https://github.com/bnewvillage/wdd130" target="_blank">WDD 130</a></li>
+                <li><a href="https://www.youtube.com/shorts/310Kj2kmptg" target="_blank">Flex-Wrap Short</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            ©️
+            <span id="currentYear"></span>
+            Blaine Villanueva | Philippines
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
 </body>
 </html>
