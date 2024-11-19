@@ -1,0 +1,26 @@
+@media (min-width:600px){
+
+    header{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    nav{
+        display:inline-block;
+    }
+
+    
+    nav ul{
+        display:flex;
+        justify-content: right;
+        gap:1rem;
+    }
+    nav li{
+        width:100px;
+    }
+
+    #menu{
+        display:none;
+    }
+}

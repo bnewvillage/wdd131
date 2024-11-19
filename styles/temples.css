@@ -1,0 +1,111 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+a,ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav li{
+    background-color: #373737;
+}
+
+header{
+    padding:10px;
+}
+
+nav li{
+    text-align: center;
+    padding:5px;
+}
+
+nav li:hover{
+    background-color: black;
+}
+
+body{
+    background-color: #1d1d1d;
+    color:#ffffff;
+    font-family: "Pridi", serif;
+    font-weight: 300;
+    max-width: 900px;
+    margin:auto;
+    padding:0;
+}
+
+footer{
+    margin:0;
+    padding:0;
+    background-color: #141414;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#menu.open::before{
+    content:"✖️";
+}
+
+#menu{
+    font-size:1.5rem;
+    border:0;
+    background:none;
+    color:white;
+    position:absolute;
+    top:25px;
+    right:10px;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+
+main{
+    display:flex;
+    justify-content: center;
+}
+
+.templeFigures {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+    margin:10px;
+}
+
+.templeFigures figure{
+    display:block;
+}
+
+img{
+    width:100%;
+    height:auto;
+
+}
+
+@media (max-width:600px){
+    .templeFigures{
+        grid-template-columns: 1fr 1fr;
+    }
+    nav.open{
+        display:block;
+    }
+
+    nav{
+        display:none;
+    }
+}
+
+@media (max-width:500px){
+    .templeFigures{
+        grid-template-columns: 1fr;
+        width:90%;
+    }
+
+    
+}
