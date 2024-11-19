@@ -22,9 +22,10 @@ nav li{
     padding:5px;
 }
 
-nav li:hover{
+nav li:hover, nav a:hover{
     background-color: black;
 }
+
 
 body{
     background-color: #1d1d1d;
