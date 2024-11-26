@@ -1,0 +1,166 @@
+:root{
+    --main-color: rgb(42, 119, 59);
+    --second-color:beige;
+    --third-color:rgb(228,49,43);
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+a:link,a:visited,a:active{
+    text-decoration: none;
+    color:inherit;
+}
+
+body{
+    background-color: var(--third-color);
+    color:var(--second-color);
+    font-family: "Pridi", serif;
+    font-weight: 300;
+    width:100%;
+    height:100vh;
+    padding:0;
+}
+
+
+header{
+    height:20vh;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width:600px;
+    margin:0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color:var(--second-color);
+    text-align: center;
+    align-items:center;
+    width:80%;
+    padding:1rem;
+    background-color:var(--main-color);
+    margin:2rem;
+}
+
+#hero{
+    width:100%;
+    height:80vh;
+    position:relative;
+}
+
+img{
+    position:relative;
+    object-fit: cover;
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+main{
+    display:grid;
+    position:relative;
+}
+
+.cards{
+    justify-self: center;
+    background-color: var(--main-color);
+    width:90%;
+    padding:3rem 0;
+    position:relative;
+    display:grid;
+    justify-content: center;
+    margin:10px;
+}
+
+.cards h2{
+    text-align: center;
+}
+
+#weather-icon{
+    justify-self: center;
+    width:50px;
+    margin:0 0;
+}
+
+ul {
+  font-size: .9rem;
+  list-style: none;
+  padding: 0;
+  margin:1rem 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  width:300px;
+}
+
+.label {
+  width: 120px;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+footer{
+    text-align: center;
+    background-color: var(--main-color);
+    color:var(--second-color);
+}
+
+@media (max-width:500px){
+    
+}
+
+@media (min-width:500px){
+    #weather-icon{
+        display:none;
+    }
+    #weather-header::after{
+        content:"⛅";
+    }
+    #hero{
+        z-index:1;
+        max-height:70vh;
+        object-fit: cover;
+    }
+    .cards{
+        max-width:300px;
+        position:absolute;
+        margin-bottom:1rem;
+        z-index:2;
+        padding:0;
+    }
+
+    .cards > *{
+        margin:0;
+    }
+
+    .data{
+        top:0;
+        left:0;
+    }
+
+    .weather{
+        bottom:0;
+        right:0;
+    }
+
+    
+}
+
+@media (min-width:800px){
+    .cards{
+        max-width:350px;
+        position:absolute;
+        margin-bottom:1rem;
+        padding:1.5rem 0;
+        z-index:2;
+    }
+}

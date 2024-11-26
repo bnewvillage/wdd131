@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Blaine Villanueva">
+    <meta name="description" content="WDD 131 responsive web page">
+    <link href="styles/place.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title></title>
+    <script src="scripts/place.js" defer></script>
+
+    <body>
+        <header>
+            <h1>Motor City</h1>
+        </header>
+
+        <main>
+            <section id="hero">
+                <picture class="hero-image">
+                    <source srcset="images/hero-large.webp" media="(min-width:800px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width:500px)">
+                    <img src="images/hero-small.webp" alt="motorcycle">
+                </picture>
+            </section>
+
+            <section class="cards data">
+                <h2>Data</h2>
+                <ul>
+                    <li><span class="label">Distance:</span> 25 km (to Dubai Mall)</li>
+                    <li><span class="label">Units:</span> 2,800+ homes</li>
+                    <li><span class="label">Rent:</span> AED 60K+ (studio)</li>
+                    <li><span class="label">People:</span> 15,000 residents</li>
+                    <li><span class="label">Area:</span> 3.5 sq. km</li>
+                  </ul>
+                  
+            </section>
+
+            <section class="cards weather">
+                <h2 id="weather-header">Weather</h2>
+                <img id="weather-icon" src="images/weather-icon-mobile.svg" alt="weather icon">
+                <ul>
+                    <li><span class="label">Temperature:</span> <p id="temperature">79</p></li>
+                    <li><span class="label">Conditions:</span> <p>Sunny</p></li>
+                    <li><span class="label">Wind:</span> <p id="windspeed">9</p></li>
+                    <li><span class="label">Wind Chill:</span> <p id="windchill"></p></li>
+                    
+                  </ul>                  
+            </section>
+
+        </main>
+
+        <footer>
+            <p>
+                ©️
+                <span id="currentYear"></span>
+                Blaine Villanueva | Philippines
+            </p>
+    
+            <p id="lastModified"></p>    
+        </footer>
+
+    </body>
+</html>
