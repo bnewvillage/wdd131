@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Gallery</title>
+    <meta name="author" content="Blaine Villanueva">
+    <meta name="description" content="Temple gallery with dynamic manipulation using javascript">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Gallery</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul>
+                <li id="home">
+                    <a>Home</a>
+                </li>
+                <li id="old">
+                    <a>Old</a>
+                </li>
+                <li id="new">
+                    <a>New</a>
+                </li>
+                <li id="large">
+                    <a>Large</a>
+                </li>
+                <li id="small">
+                    <a>Small</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <section class="templeFigures">
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            ©️
+            <span id="currentYear"></span>
+            Blaine Villanueva | Philippines
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

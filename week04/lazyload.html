@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Blaine Villanueva">
+        <meta name="description" content="Lazy Load page example">
+        <link href="styles/lazyload.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Lazy Load</title>
+    
+        <script src="scripts/lazyload.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1>Lazy Load</h1>
+    </header>
+    
+    <main>
+        <img src="images/sanDiegoTemple.webp" width="400px" height="600px" loading="lazy">
+        <img src="images/hero-large.webp" width="400" height="600" loading="lazy">
+        <img src="images/hero-medium.webp" width="400" height="600" loading="lazy">
+        <img src="images/hero-small.webp" width="400" height="600" loading="lazy">
+        <img src="images/motorcyclestore-small.webp" width="400" height="600" loading="lazy">
+        <img src="images/philippines-flag.webp" width="400" height="600" loading="lazy">
+    </main>
+
+    <footer>
+        <p>
+            ©️
+            <span id="currentYear"></span>
+            Blaine Villanueva | Philippines
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
