@@ -1,0 +1,5 @@
+Subject: Personal Resume Website
+
+Description: A 3-page website designed to showcase professional and personal achievements, skills, and portfolio in engaging and modern format. The 3 pages will consist of a home page with an introduction and summary, a portfolio page with completed and in progress projects with descriptions and links, a contact page with a form and other social links included.
+
+Purpose: To create a professional online presence that helps showcase skills, projects, and contact information to potential collaborators or employers. Improve my chances of networking and career opportunities. 
