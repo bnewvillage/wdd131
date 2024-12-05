@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Blaine Villanueva">
+    <meta name="description" content="Review form">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" id="reviewForm">
+            <label class="inputGroup">Product Name<br>
+                <select class="inputGroup" id="productName" required>
+                    <option value="" disabled selected>Select a product...</option>
+                </select>
+            </label>
+            
+            <fieldset id="rating"class="inputGroup">
+                <legend>Overall Rating</legend>
+                <label>☆<input type="radio" name="rating" value="1" required></label>
+
+                <label>☆☆<input type="radio" name="rating" value="2" required></label>
+
+                <label>☆☆☆<input type="radio" name="rating" value="3" required></label>
+                <label>☆☆☆☆<input type="radio" name="rating" value="4" required></label>
+                <label>☆☆☆☆☆<input type="radio" name="rating" value="5" required></label>
+            </fieldset>
+            
+            <label class="inputGroup">Date of Installation<br><input type="date" name="installationDate" id="installationDate" class="inputGroup" required></label>
+
+            <fieldset id="checkboxGroup" class="inputGroup">
+                <legend>Which features did you find useful in the product?<br><i>(Check all that apply)</i></legend>
+
+                <label><input type="checkbox" id="checkbox" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" id="checkbox" name="features" value="ease">Ease of Use</label>
+                <label><input type="checkbox" id="checkbox" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" id="checkbox" name="features" value="design">Design</label>
+            </fieldset>
+
+            <label>Written Review<span class="optional">(Optional)</span><br><textarea name="comment" id="comment"class="inputGroup"></textarea></label>
+
+            <fieldset class="inputGroup">
+                <label>Your Name<span class="optional">(Optional)</span><br><input type="text" id="userName" name="userName"></label>
+            </fieldset>
+
+            <button class="inputGroup" type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            ©️
+            <span id="currentYear"></span>
+            Blaine Villanueva | Philippines
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
